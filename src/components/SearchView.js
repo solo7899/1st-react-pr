@@ -65,7 +65,7 @@ const SearchView = ({
   setPageNumber,
   totalPages,
 }) => {
-  console.log(isLoading, setIsLoading);
+  // console.log(isLoading, setIsLoading);
 
   const movies = searchResults.map((movie, i) => {
     return <CardView movie={movie} key={i} />;
