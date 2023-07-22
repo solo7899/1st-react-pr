@@ -75,21 +75,11 @@ const SearchView = ({
     <>
       <Hero page={keyword} isLoading={isLoading} />
 
-      {/* { 
-      searchResults ? (
-      <div className="container">
-        <div className="row">{movies}</div>
-      </div> ) : (
-        <h1>No movie found</h1> )
-      } */}
-
-      {searchResults && (
+      {searchResults.length > 0 ? (
         <div className="container">
           <div className="row">{movies}</div>
         </div>
-      )}
-
-      {!searchResults && (
+      ) : (
         <div class="mx-auto card text-bg-transparent mb-3 text-center border-0 w-75">
           <div class="card-body">
             <h1 class="card-title">No Movie Found</h1>
